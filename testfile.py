@@ -1,0 +1,2 @@
+tim = "timmi"
+minjoo = "mj"
