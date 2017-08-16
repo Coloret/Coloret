@@ -1,0 +1,202 @@
+ul
+{
+	
+	
+	list-style:none;
+	
+	
+}
+
+li
+{
+	border-style:solid;
+	border-width:0.05em;
+	border-color:black;
+	border-radius:5%;
+	
+	padding-left:0%;
+}
+.makeup-pref li
+{
+	
+	border-radius:2px;
+	
+}
+
+.skin-color-chooser li
+{
+	border-style:solid;
+	border-width:0.05em;
+	border-color:black;
+	border-radius:100%;
+	margin-left:1.5%;
+	padding-right:1%;
+	padding-left:0%;
+	height:auto;
+	width:auto;
+	border-color:#af9e9e;
+	
+}
+body,html
+{
+	display:flex;
+	margin:0;
+	padding:0;
+	flex-direction:column;
+	height:100%;
+	width:100%;
+	font-family: 'Lato', sans-serif;
+	align-items:center;
+	
+	
+}
+.name-container
+{
+	height:1em;
+	color:black;
+	
+}
+.skin-color-chooser
+{
+	height:auto;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	padding-right:2.5%;
+
+}
+.skin-color-container
+{
+	display:flex;
+	height:15%;
+	width:100%;
+}
+.review-bar
+{
+	display:flex;
+	align-items:center;
+	color:#e2dcdc;
+	width:22.5%;
+	height:8%;
+	margin-left:1.5%;
+	border-radius:15px;
+	border-color:#af9e9e;
+	border-style:solid;
+	border-width:2px;
+}
+
+.search-btn
+{
+	padding-top:2em;
+	align-self:center;
+	margin-top:-2em;
+	margin-left:0.5em;
+}
+
+.follower-count-container
+{
+	height:5%;
+	color:#af9e9e;
+}
+.search-bar-container
+{
+	display:flex;
+	justify-content:center;
+	width:100%;
+	height:75%;
+	background-color:#f4f4f4;
+}
+.search-bar
+{
+	display:flex;
+	width:30em;
+	height:5em;
+	padding-left:6.5em;
+}
+.search-icon
+{
+	background-image:url('../img/button_icon_rot_small.png');
+	background-color:#f4f4f4;
+	background-repeat: no-repeat;
+	width:32px;
+	height:32px;
+	background-position: 50% 50%;
+	
+	border: none;
+}
+.search-bar input
+{
+	width:27.5em;
+	height:3.5em;
+	border-radius:20px;
+	border-style:solid;
+	border-width:5%;
+	border-color:black;
+	
+}
+
+.profile-pic-container
+{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	height:45em;
+	width:85em;
+}
+.profile-pic
+{
+	
+	z-index:1;
+	margin-top:-5em;
+	height:100%;
+	width:100%;
+	
+}
+.test-border
+{
+	border-style:solid;
+	border-width:2px;
+	border-color:black;
+	
+}
+.small
+{
+	width:7.5%;
+	height:auto;
+}
+
+.medium
+{
+	width:5%;
+	height:auto;
+}
+
+.large
+{
+	width:200px;
+	height:200px;
+}
+.circular
+{
+	border-radius:100%;
+	
+}
+
+.makeup-pref-container
+{
+	width:100%;
+	height:auto;
+	display:flex;
+	justify-content:center;
+	
+}
+
+.makeup-pref
+{
+	display:flex;
+	justify-content:center;
+	width:0.5em;
+	height:auto;
+	padding-left:0.5em;
+}
+
