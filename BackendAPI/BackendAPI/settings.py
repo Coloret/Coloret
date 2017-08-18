@@ -63,7 +63,22 @@ AUTHENTICATION_BACKENDS = (
 
    'rest_framework_social_oauth2.backends.DjangoOAuth2',
    'django.contrib.auth.backends.ModelBackend',
+
+   #facebook Auth Backend
+   'social_core.backends.facebook.FacebookOAuth2',
+   'social_core.backends.facebook.FacebookAppOAuth2'
 )
+
+# Facebook configuration
+SOCIAL_AUTH_FACEBOOK_KEY = '1472256142868459'
+SOCIAL_AUTH_FACEBOOK_SECRET = '092e240fec5e29f66e62eeb908967201'
+
+# Define SOCIAL_AUTH_FACEBOOK_SCOPE to get extra permissions from facebook.
+#  Email is not sent by default, to get it, you must request the email permission:
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
+    'fields': 'id, name, email, first_name, last_name,age_range,link,gender,picture'
+     }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -104,7 +119,7 @@ WSGI_APPLICATION = 'BackendAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'PostgreSQL 9.6.2',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'ColoretDB',
         'USER' : 'coloret',
         'PASSWORD' : config('PASSWORD'),
