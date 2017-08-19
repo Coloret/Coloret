@@ -9,3 +9,4 @@ lib/
 *.py[cod]
 *.sqlite3
 pip-selfcheck.json
+BackendAPI/settings/local.py
