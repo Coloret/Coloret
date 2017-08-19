@@ -15,10 +15,24 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from rest_framework import routers, serializers, viewsets, permissions
+from rest_framework.authentication import SessionAuthentication, BasicAuthentication
+from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token
 
+
+from Comments.serializers import CommentViewSet
+from Posts.views import PostViewset
+
+router = routers.DefaultRouter()
+router.register(r'comments',CommentViewSet)
+router.register(r'posts', PostViewset)
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^api/', include(router.urls)),
     url(r'^api/accounts/',include('accounts.urls', namespace='accounts')),
     url(r'^auth/', include('rest_framework_social_oauth2.urls')),
+    url(r'^api/auth/',include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^api/auth/token/$', obtain_jwt_token),
+    url(r'^api/auth/token-refresh/', refresh_jwt_token),
 ]

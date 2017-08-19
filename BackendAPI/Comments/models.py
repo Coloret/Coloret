@@ -10,11 +10,8 @@ class Comment(models.Model):
 
     user = models.ForeignKey(UserProfile)
 
-    #Fields for a Generic Relation between Comment and other models
-    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
-    object_id = models.PositiveIntegerField()
-    content_object = GenericForeignKey('content_type', 'object_id')
-
+    #Fields for a Generic Relation between Comment and Post
+    post = models.ForeignKey(Post, related_name='comments')
     # Fields for the actual comment attributes
     content = models.TextField
     published_date = models.DateTimeField(auto_now_add=True)
@@ -23,3 +20,6 @@ class Comment(models.Model):
     def __str__(self):
 
         return str(self.user.username)
+
+    def get_comment_content(self):
+        return self.content

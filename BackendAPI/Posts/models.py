@@ -7,6 +7,5 @@ from accounts.models import UserProfile
 class Post(models.Model):
 
     user = models.ForeignKey(UserProfile)
-    publish_date = models.DateField
-    #comments = GenericForeignKey('Comment')
+    publish_date = models.DateField()
 

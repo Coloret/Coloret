@@ -11,13 +11,13 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('Posts', '0001_initial'),
+        ('Comments', '0002_comment_post'),
         ('accounts', '0001_initial'),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='post',
+            model_name='comment',
             name='user',
             field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='accounts.UserProfile'),
         ),

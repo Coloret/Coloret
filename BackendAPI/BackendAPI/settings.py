@@ -67,6 +67,16 @@ REST_FRAMEWORK = {
     ),
 }
 
+#This is some additional settings to the JWT Authentications System.
+# We cam add more settings here if we want from their official website
+#https://getblimp.github.io/django-rest-framework-jwt/
+
+JWT_AUTH = {
+
+    'JWT_ALLOW_REFRESH': True,
+
+}
+
 AUTHENTICATION_BACKENDS = (
 
    'rest_framework_social_oauth2.backends.DjangoOAuth2',
