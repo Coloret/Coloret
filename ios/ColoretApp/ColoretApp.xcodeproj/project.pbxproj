@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C32C9651F478BBD000CBA09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C32C9641F478BBD000CBA09 /* AppDelegate.swift */; };
+		6C32C9671F478BBD000CBA09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C32C9661F478BBD000CBA09 /* ViewController.swift */; };
+		6C32C96A1F478BBD000CBA09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C32C9681F478BBD000CBA09 /* Main.storyboard */; };
+		6C32C96D1F478BBD000CBA09 /* ColoretApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C32C96B1F478BBD000CBA09 /* ColoretApp.xcdatamodeld */; };
+		6C32C96F1F478BBD000CBA09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C32C96E1F478BBD000CBA09 /* Assets.xcassets */; };
+		6C32C9721F478BBD000CBA09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C32C9701F478BBD000CBA09 /* LaunchScreen.storyboard */; };
+		6C32C97D1F478BBD000CBA09 /* ColoretAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C32C97C1F478BBD000CBA09 /* ColoretAppTests.swift */; };
+		6C32C9881F478C50000CBA09 /* bg_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C32C9871F478C50000CBA09 /* bg_img.jpg */; };
+		6C32C98A1F478E21000CBA09 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C32C9891F478E21000CBA09 /* logo1.png */; };
+		6C32C98C1F47AAE2000CBA09 /* bg_img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C32C98B1F47AAE2000CBA09 /* bg_img2.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C32C9791F478BBD000CBA09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C32C9591F478BBD000CBA09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C32C9601F478BBD000CBA09;
+			remoteInfo = ColoretApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C32C9611F478BBD000CBA09 /* ColoretApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColoretApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C32C9641F478BBD000CBA09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C32C9661F478BBD000CBA09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C32C9691F478BBD000CBA09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C32C96C1F478BBD000CBA09 /* ColoretApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ColoretApp.xcdatamodel; sourceTree = "<group>"; };
+		6C32C96E1F478BBD000CBA09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C32C9711F478BBD000CBA09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C32C9731F478BBD000CBA09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C32C9781F478BBD000CBA09 /* ColoretAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColoretAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C32C97C1F478BBD000CBA09 /* ColoretAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoretAppTests.swift; sourceTree = "<group>"; };
+		6C32C97E1F478BBD000CBA09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C32C9871F478C50000CBA09 /* bg_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_img.jpg; sourceTree = "<group>"; };
+		6C32C9891F478E21000CBA09 /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
+		6C32C98B1F47AAE2000CBA09 /* bg_img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_img2.jpg; sourceTree = "<group>"; };
+		6C32C98D1F47DAE8000CBA09 /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		6C32C98E1F47DAE8000CBA09 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		6C32C98F1F47DAE8000CBA09 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		6C32C9901F47DAE8000CBA09 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		6C32C9911F47DAE8000CBA09 /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		6C32C9921F47DAE8000CBA09 /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		6C32C9931F47DAE8000CBA09 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		6C32C9941F47DAE8000CBA09 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		6C32C9951F47DAE8000CBA09 /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		6C32C9961F47DAE8000CBA09 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		6C32C9971F47DAE8000CBA09 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		6C32C9981F47DAE8000CBA09 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		6C32C9991F47DAE8000CBA09 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		6C32C99A1F47DAE8000CBA09 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		6C32C99B1F47DAE8000CBA09 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		6C32C99C1F47DAE8000CBA09 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		6C32C99D1F47DAE8000CBA09 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		6C32C99E1F47DAE8000CBA09 /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		6C32C99F1F47DE00000CBA09 /* Allura-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Allura-Regular.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C32C95E1F478BBD000CBA09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C32C9751F478BBD000CBA09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C32C9581F478BBD000CBA09 = {
+			isa = PBXGroup;
+			children = (
+				6C32C9631F478BBD000CBA09 /* ColoretApp */,
+				6C32C97B1F478BBD000CBA09 /* ColoretAppTests */,
+				6C32C9621F478BBD000CBA09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C32C9621F478BBD000CBA09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C32C9611F478BBD000CBA09 /* ColoretApp.app */,
+				6C32C9781F478BBD000CBA09 /* ColoretAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C32C9631F478BBD000CBA09 /* ColoretApp */ = {
+			isa = PBXGroup;
+			children = (
+				6C32C9641F478BBD000CBA09 /* AppDelegate.swift */,
+				6C32C9661F478BBD000CBA09 /* ViewController.swift */,
+				6C32C9681F478BBD000CBA09 /* Main.storyboard */,
+				6C32C96E1F478BBD000CBA09 /* Assets.xcassets */,
+				6C32C9871F478C50000CBA09 /* bg_img.jpg */,
+				6C32C9891F478E21000CBA09 /* logo1.png */,
+				6C32C98B1F47AAE2000CBA09 /* bg_img2.jpg */,
+				6C32C9701F478BBD000CBA09 /* LaunchScreen.storyboard */,
+				6C32C9731F478BBD000CBA09 /* Info.plist */,
+				6C32C98D1F47DAE8000CBA09 /* Lato-HeavyItalic.ttf */,
+				6C32C98E1F47DAE8000CBA09 /* Lato-Italic.ttf */,
+				6C32C98F1F47DAE8000CBA09 /* Lato-Light.ttf */,
+				6C32C9901F47DAE8000CBA09 /* Lato-LightItalic.ttf */,
+				6C32C9911F47DAE8000CBA09 /* Lato-Medium.ttf */,
+				6C32C9921F47DAE8000CBA09 /* Lato-MediumItalic.ttf */,
+				6C32C9931F47DAE8000CBA09 /* Lato-Regular.ttf */,
+				6C32C99F1F47DE00000CBA09 /* Allura-Regular.otf */,
+				6C32C9941F47DAE8000CBA09 /* Lato-Semibold.ttf */,
+				6C32C9951F47DAE8000CBA09 /* Lato-SemiboldItalic.ttf */,
+				6C32C9961F47DAE8000CBA09 /* Lato-Thin.ttf */,
+				6C32C9971F47DAE8000CBA09 /* Lato-ThinItalic.ttf */,
+				6C32C9981F47DAE8000CBA09 /* Lato-Black.ttf */,
+				6C32C9991F47DAE8000CBA09 /* Lato-BlackItalic.ttf */,
+				6C32C99A1F47DAE8000CBA09 /* Lato-Bold.ttf */,
+				6C32C99B1F47DAE8000CBA09 /* Lato-BoldItalic.ttf */,
+				6C32C99C1F47DAE8000CBA09 /* Lato-Hairline.ttf */,
+				6C32C99D1F47DAE8000CBA09 /* Lato-HairlineItalic.ttf */,
+				6C32C99E1F47DAE8000CBA09 /* Lato-Heavy.ttf */,
+				6C32C96B1F478BBD000CBA09 /* ColoretApp.xcdatamodeld */,
+			);
+			path = ColoretApp;
+			sourceTree = "<group>";
+		};
+		6C32C97B1F478BBD000CBA09 /* ColoretAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C32C97C1F478BBD000CBA09 /* ColoretAppTests.swift */,
+				6C32C97E1F478BBD000CBA09 /* Info.plist */,
+			);
+			path = ColoretAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C32C9601F478BBD000CBA09 /* ColoretApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C32C9811F478BBD000CBA09 /* Build configuration list for PBXNativeTarget "ColoretApp" */;
+			buildPhases = (
+				6C32C95D1F478BBD000CBA09 /* Sources */,
+				6C32C95E1F478BBD000CBA09 /* Frameworks */,
+				6C32C95F1F478BBD000CBA09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColoretApp;
+			productName = ColoretApp;
+			productReference = 6C32C9611F478BBD000CBA09 /* ColoretApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C32C9771F478BBD000CBA09 /* ColoretAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C32C9841F478BBD000CBA09 /* Build configuration list for PBXNativeTarget "ColoretAppTests" */;
+			buildPhases = (
+				6C32C9741F478BBD000CBA09 /* Sources */,
+				6C32C9751F478BBD000CBA09 /* Frameworks */,
+				6C32C9761F478BBD000CBA09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C32C97A1F478BBD000CBA09 /* PBXTargetDependency */,
+			);
+			name = ColoretAppTests;
+			productName = ColoretAppTests;
+			productReference = 6C32C9781F478BBD000CBA09 /* ColoretAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C32C9591F478BBD000CBA09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Dolf Mardan";
+				TargetAttributes = {
+					6C32C9601F478BBD000CBA09 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					6C32C9771F478BBD000CBA09 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6C32C9601F478BBD000CBA09;
+					};
+				};
+			};
+			buildConfigurationList = 6C32C95C1F478BBD000CBA09 /* Build configuration list for PBXProject "ColoretApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C32C9581F478BBD000CBA09;
+			productRefGroup = 6C32C9621F478BBD000CBA09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C32C9601F478BBD000CBA09 /* ColoretApp */,
+				6C32C9771F478BBD000CBA09 /* ColoretAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C32C95F1F478BBD000CBA09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C32C9881F478C50000CBA09 /* bg_img.jpg in Resources */,
+				6C32C9721F478BBD000CBA09 /* LaunchScreen.storyboard in Resources */,
+				6C32C96F1F478BBD000CBA09 /* Assets.xcassets in Resources */,
+				6C32C98C1F47AAE2000CBA09 /* bg_img2.jpg in Resources */,
+				6C32C98A1F478E21000CBA09 /* logo1.png in Resources */,
+				6C32C96A1F478BBD000CBA09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C32C9761F478BBD000CBA09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C32C95D1F478BBD000CBA09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C32C9671F478BBD000CBA09 /* ViewController.swift in Sources */,
+				6C32C96D1F478BBD000CBA09 /* ColoretApp.xcdatamodeld in Sources */,
+				6C32C9651F478BBD000CBA09 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C32C9741F478BBD000CBA09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C32C97D1F478BBD000CBA09 /* ColoretAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C32C97A1F478BBD000CBA09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C32C9601F478BBD000CBA09 /* ColoretApp */;
+			targetProxy = 6C32C9791F478BBD000CBA09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C32C9681F478BBD000CBA09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C32C9691F478BBD000CBA09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C32C9701F478BBD000CBA09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C32C9711F478BBD000CBA09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C32C97F1F478BBD000CBA09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C32C9801F478BBD000CBA09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C32C9821F478BBD000CBA09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColoretApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dolf.ColoretApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6C32C9831F478BBD000CBA09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColoretApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dolf.ColoretApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6C32C9851F478BBD000CBA09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColoretAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dolf.ColoretAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColoretApp.app/ColoretApp";
+			};
+			name = Debug;
+		};
+		6C32C9861F478BBD000CBA09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColoretAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dolf.ColoretAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColoretApp.app/ColoretApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C32C95C1F478BBD000CBA09 /* Build configuration list for PBXProject "ColoretApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C32C97F1F478BBD000CBA09 /* Debug */,
+				6C32C9801F478BBD000CBA09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C32C9811F478BBD000CBA09 /* Build configuration list for PBXNativeTarget "ColoretApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C32C9821F478BBD000CBA09 /* Debug */,
+				6C32C9831F478BBD000CBA09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C32C9841F478BBD000CBA09 /* Build configuration list for PBXNativeTarget "ColoretAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C32C9851F478BBD000CBA09 /* Debug */,
+				6C32C9861F478BBD000CBA09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6C32C96B1F478BBD000CBA09 /* ColoretApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6C32C96C1F478BBD000CBA09 /* ColoretApp.xcdatamodel */,
+			);
+			currentVersion = 6C32C96C1F478BBD000CBA09 /* ColoretApp.xcdatamodel */;
+			path = ColoretApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6C32C9591F478BBD000CBA09 /* Project object */;
+}
