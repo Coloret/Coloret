@@ -32,18 +32,26 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 # Application definition
 
 INSTALLED_APPS = [
+
+    #Default applications
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts',
+
+    #external applications to support common tasks
     'rest_framework',
     'oauth2_provider',
     'social_django',
     'rest_framework_social_oauth2',
     'storages',
+
+    # Our own project Application
+    'Comments',
+    'Posts',
+    'accounts',
 
 ]
 REST_FRAMEWORK = {
@@ -119,13 +127,8 @@ WSGI_APPLICATION = 'BackendAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ColoretDB',
-        'USER' : 'coloret',
-        'PASSWORD' : config('PASSWORD'),
-        'HOST' : 'coloret-db.c61283mrynh4.us-east-2.rds.amazonaws.com',
-        'PORT' : '5432',
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
