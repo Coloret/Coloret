@@ -6,3 +6,7 @@ lib/
 *.sqlite3
 pip-selfcheck.json
 BackendAPI/settings/local.py
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

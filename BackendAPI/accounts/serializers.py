@@ -2,12 +2,14 @@ from accounts.models import UserProfile
 from rest_framework import routers, serializers, viewsets, permissions
 from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 
-class UserSerializer(serializers.ModelSerializer):
 
+class UserSerializer(serializers.ModelSerializer):
+    permission_classes = []
     class Meta:
         model = UserProfile
         fields = ('username', 'first_name', 'last_name', 'email', 'date_joined', 'password')
         extra_kwargs = {'password': {'write_only': True}}
+
 
     def create(self, validated_data):
 
