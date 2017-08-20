@@ -18,10 +18,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--login_page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColoretApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="login_page" id="BYZ-38-t0r" customClass="ViewController" customModule="ColoretApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -57,21 +57,27 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="name.lastname@example.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMc-IS-y2g" userLabel="uname">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="name.lastname@example.com" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NMc-IS-y2g" userLabel="uname">
                                             <rect key="frame" x="28" y="41" width="284" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                            <connections>
+                                                <action selector="username:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="YlD-Al-8EQ"/>
+                                            </connections>
                                         </textField>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GJm-g0-3gI" userLabel="passwd">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GJm-g0-3gI" userLabel="passwd">
                                             <rect key="frame" x="28" y="123" width="284" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                            <connections>
+                                                <action selector="password:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Kpu-ml-xd3"/>
+                                            </connections>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fom-iI-wtg" userLabel="login">
                                             <rect key="frame" x="37" y="159" width="105" height="50"/>
@@ -81,6 +87,9 @@
                                             <state key="normal" title="LOGIN">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="LogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c10-k2-662"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qw8-4F-ILQ" userLabel="signup">
                                             <rect key="frame" x="183" y="159" width="105" height="50"/>
@@ -90,6 +99,9 @@
                                             <state key="normal" title="SIGNUP">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="SignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6SW-0u-3wh"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <variation key="default">
@@ -118,6 +130,9 @@
                                 <state key="normal" title="LOGIN with Facebook">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="login_fb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ui-8W-1o7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximize your beauty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD0-MH-GbE" userLabel="max_label">
                                 <rect key="frame" x="16" y="100" width="288" height="45"/>
@@ -174,12 +189,61 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="login_fb" destination="DO7-KC-c14" id="XRw-pc-wT1"/>
                         <outlet property="login_google" destination="cu7-CT-hyT" id="XyB-0h-cym"/>
+                        <outlet property="password" destination="GJm-g0-3gI" id="8Wq-VE-66q"/>
+                        <outlet property="username" destination="NMc-IS-y2g" id="QIP-Kl-GlI"/>
+                        <segue destination="OWo-gV-w86" kind="show" identifier="ShowUserTable" id="LGP-rd-QY0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="135" y="138.38028169014083"/>
+        </scene>
+        <!--news feed-->
+        <scene sceneID="CCz-3f-mgX">
+            <objects>
+                <tableViewController id="BJV-eZ-Gof" customClass="UserTableViewController" customModule="ColoretApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bvX-yt-XB2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="YEP-CM-sIW">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YEP-CM-sIW" id="Q8u-zR-S5S">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BJV-eZ-Gof" id="bKr-bD-fM3"/>
+                            <outlet property="delegate" destination="BJV-eZ-Gof" id="VOl-mT-MeU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="news feed" id="D7g-2e-RRb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k7l-sQ-NLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1667" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XRe-8K-EdC">
+            <objects>
+                <navigationController id="OWo-gV-w86" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mud-Ip-NWN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BJV-eZ-Gof" kind="relationship" relationship="rootViewController" id="yhf-ze-Isd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ben-f6-87r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="138"/>
         </scene>
     </scenes>
     <resources>
