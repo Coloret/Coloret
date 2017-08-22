@@ -1,0 +1,31 @@
+#review-form
+{
+	display:flex;
+	height:100%;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.post-review-container
+{
+	padding-top:10em;
+	width:75%;
+	height:75%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+.review-text-area
+{
+	width:30em;
+	height:15em;
+	border-radius:5%;
+}
+
+.star-rating-container
+{
+	
+}
